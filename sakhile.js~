@@ -21,9 +21,9 @@ var myLed = new five.Led(12).strobe(50);
 //Using keypress to control the led
 if (key.name == "d"){
 	led.toggle();//manual switching on/off of led
-}else if(key.name == "e"){
+}if(key.name == "e"){
 	led.strobe(100);//automatic switching on/off of led for a given time 
-}else if (key.name == "s"){
+}if (key.name == "s"){
 	led.stop();// stops the led
 }else if (key.name == "f"){
 	led.off();// turns off the led
