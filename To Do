@@ -1,0 +1,10 @@
+For first time users here are the steps to take for blinking led's to building robots.
+
+#Step 1
+In you project folder install the module johnny-five by running - npm install johnny-five in the terminal. You should see a node_modules folder in your project folder.
+
+#Step 2
+In your project folder locate the file 'led blink.js' and open it to see what the code looks like.
+
+#Step 3
+In the terminal direct to your project folder and run the command - node led\ blink.js
