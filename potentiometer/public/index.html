@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style media="screen">
+        .data {
+            border: 5px solid black;
+            background: green;
+        }
+    </style>
+    <title></title>
+
+</head>
+
+<body>
+
+    <div class="data">
+
+    </div>
+    <script src="/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript">
+        var socket = io();
+        $(document).ready(function() {
+            socket.on('value', function(data) {
+                $(".data").html('<h1>' + data.data + 'px^2' + '</h1>');
+                $(".data").css('width', data.data + 'px');
+                $(".data").css('height', data.data + 'px');
+            });
+        });
+    </script>
+</body>
+
+</html>
