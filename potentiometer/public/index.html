@@ -28,6 +28,9 @@
             socket.on('value', function(data) {
                 $(".data").html('<h1>' + data.data + 'px^2' + '</h1>');
                 $(".data").css('width', data.data + 'px');
+            });
+            socket.on('value1', function(data) {
+                $(".data").html('<h1>' + data.data + 'px^2' + '</h1>');
                 $(".data").css('height', data.data + 'px');
             });
         });
