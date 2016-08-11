@@ -7,4 +7,5 @@ This app lets you use potentiometers to resize and move an image using css.
 * Do a `npm install`. This will install all modules needed.
 
 ### Setting up hardware
-'<img src="./public/potentiometer_bb.jpg" />'
+<img src="./public/img/potentiometer_bb.jpg" height="400px"/>
+
