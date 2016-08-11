@@ -9,3 +9,7 @@ This app lets you use potentiometers to resize and move an image using css.
 ### Setting up hardware
 <img src="./public/img/potentiometer_bb.jpg" height="400px"/>
 
+## Running the app
+* In the terminal type `node potentiometer.js` or `nodemon potentiometer.js`.
+* You should see a message: `App running on port 8060`.
+* In the browser type: `http://localhost:8060`.
