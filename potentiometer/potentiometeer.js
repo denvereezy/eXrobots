@@ -8,7 +8,7 @@ var board = new five.Board();
 app.use(express.static('public'));
 board.on('ready', function(){
   potentiometer = new five.Sensor({
-    pin: 'A2',
+    pin: 'A1',
     freq: 250
   });
   potentiometer2 = new five.Sensor({
