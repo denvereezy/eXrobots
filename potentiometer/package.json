@@ -1,0 +1,16 @@
+{
+  "name": "potentiometer",
+  "version": "1.0.0",
+  "description": "This app lets you use potentiometers to resize and move an image using css.",
+  "main": "potentiometeer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "denver daniels",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "johnny-five": "^0.9.62",
+    "socket.io": "^1.4.8"
+  }
+}
