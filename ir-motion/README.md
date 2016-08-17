@@ -7,4 +7,4 @@
 * Run `node app.js`.
 
 # Setting up hardware
- <img src="./ir-motion.jpg" height="300px">
+ <img src="./ir_motion.jpg" height="300px">
