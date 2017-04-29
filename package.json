@@ -12,7 +12,8 @@
   },
   "dependencies":{
     "johnny-five": "latest",
-    "keypress":"latest"
+    "keypress":"latest",
+    "socket.io":"latest"
   },
   "author": "various authors",
   "license": "MIT",
