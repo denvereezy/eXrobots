@@ -21,23 +21,19 @@ board.on('ready', function(){
     freq: 250
   });
 
-  var led = new five.Led(11);
-
   potentiometer.on('data', function(){
-    var list = this.value;
-    console.log(list);
-    led.brightness(list);
+    var value_1 = this.value;
+    console.log(value_1);
     io.emit('value', {
-        data: list
+        data: value_1
     });
   });
 
   potentiometer2.on('data', function(){
-    var list = this.value;
-    console.log(list);
-    led.brightness(list);
+    var value_2 = this.value;
+    console.log(value_2);
     io.emit('value1', {
-        data: list
+        data: value_2
     });
   });
 });
