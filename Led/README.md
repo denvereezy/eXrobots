@@ -6,7 +6,7 @@ Basic led projects
 
 * Arduino
 * Breadboard
-* Resistor x 1
+* 330 ohm Resistor x 1
 * Jumper Wires >= 6
 * Trimpot  (Trimmer Potentiometer x 1)
 
