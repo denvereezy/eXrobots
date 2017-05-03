@@ -1,24 +1,28 @@
-var five = require('johnny-five');
-var http = require('http');
-var express = require('express'),
-    app = module.exports.app = express(),
-    io = require('socket.io'),
-     potentiometer,potentiometer2;
-var board = new five.Board();
+var five = require('johnny-five'),
+    http = require('http'),
+    express = require('express'),
+    app = express(),
+    server = http.createServer(app),
+    io = require('socket.io')(server),,
+    board = new five.Board();
+
 app.use(express.static('public'));
+
 board.on('ready', function(){
-  potentiometer = new five.Sensor({
+  console.log('board ready');
+
+  var potentiometer = new five.Sensor({
     pin: 'A1',
     freq: 250
   });
-  potentiometer2 = new five.Sensor({
+
+  var potentiometer2 = new five.Sensor({
     pin: 'A3',
     freq: 250
   });
-var led = new five.Led(11);
-  board.repl.inject({
-    pot: potentiometer
-  });
+
+  var led = new five.Led(11);
+
   potentiometer.on('data', function(){
     var list = this.value;
     console.log(list);
@@ -27,6 +31,7 @@ var led = new five.Led(11);
         data: list
     });
   });
+
   potentiometer2.on('data', function(){
     var list = this.value;
     console.log(list);
@@ -36,8 +41,8 @@ var led = new five.Led(11);
     });
   });
 });
-var server = http.createServer(app);
-var io = require('socket.io').listen(server);
+
 var port = process.env.port || 8060;
-server.listen(port);
-console.log('App running on port ', port);
+server.listen(port, function(){
+  console.log('App running on port ', port);
+});
