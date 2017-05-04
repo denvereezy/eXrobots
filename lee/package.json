@@ -1,0 +1,24 @@
+{
+  "name": "exrobots",
+  "version": "1.0.0",
+  "description": "<img src=\"./logo.png\" height=\"200px\"/> ## Sharing knowledge of nodebots with each other to build even better robots.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denvereezy/eXrobots.git"
+  },
+  "dependencies":{
+    "johnny-five": "latest",
+    "keypress":"latest",
+    "socket.io":"latest"
+  },
+  "author": "various authors",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/denvereezy/eXrobots/issues"
+  },
+  "homepage": "https://github.com/denvereezy/eXrobots#readme"
+}
