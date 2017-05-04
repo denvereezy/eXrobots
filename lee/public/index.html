@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>slider</title>
+
+</head>
+
+<body>
+  <input id="control" type="range" min="0" max="500" step="1" oninput="getValue(this.value)" onchange="getValue(this.value)"></input>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    var io = io();
+
+    function getValue(val) {
+      io.emit('brightness', {
+        value: val
+      });
+    };
+  </script>
+</body>
+
+</html>
