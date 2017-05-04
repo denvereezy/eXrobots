@@ -17,7 +17,9 @@ Controll the LED from the Browser using Express and Socket.io
 
 ## Steps
 
-* `git clone `
+* `git clone https://github.com/denvereezy/eXrobots.git`
+* `cd eXrobots`
+* `cd slider`
 * `npm install`
 * `node app.js`
 * Open your Browser and go to [http://localhost:8060 ](http://localhost:8060/)
