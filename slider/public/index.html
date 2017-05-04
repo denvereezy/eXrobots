@@ -3,17 +3,19 @@
 
 <head>
 
-  <title>slider</title>
+  <title>Slider</title>
+  <link rel="stylesheet" href="/css/index.css">
 
 </head>
 
 <body>
-  <input id="control" type="range" min="0" max="100" step="1" oninput="getValue(this.value)" onchange="getValue(this.value)"></input>
+  <h1>Dim the LED with the slider below</h1>
+  <input id="control" type="range" min="0" max="200"step="1" oninput="getValue(this.value)" onchange="getValue(this.value)"></input>
 
   <script src="/socket.io/socket.io.js"></script>
   <script>
+  // Get the "brightness" value from the slider to the backend
     var io = io();
-
     function getValue(val) {
       io.emit('brightness', {
         value: val
