@@ -15,14 +15,16 @@
 
 <body>
   <div class="box"></div>
-  
+
   <script src="/socket.io/socket.io.js"></script>
   <script src="/js/jquery-3.1.0.js"></script>
   <script>
-    var io = io();
-    io.on('opacity', function(data) {
-      $('.box').css({
-        opacity: data.value
+    $(document).ready(function() {
+      var io = io();
+      io.on('opacity', function(data) {
+        $('.box').css({
+          opacity: data.value
+        });
       });
     });
   </script>
