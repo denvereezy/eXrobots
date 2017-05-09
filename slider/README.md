@@ -28,5 +28,4 @@ For easy restarts you can `npm install -g nodemon` globally or locally with  `np
 
 # Future Plans
 
-* Add Buttons in the Browser to turn LED `on` and `off`
-* Make the potentiometer controll the slider in the HTML when adjusting the brightness from it
+* Make the potentiometer control the slider in the HTML when adjusting the brightness from it
