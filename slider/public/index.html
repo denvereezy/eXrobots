@@ -9,22 +9,20 @@
 </head>
 
 <body>
+  <h1>LED Power</h1>
+  <div class="wrapper">
+    <input class="placement" id="power" type="button" name="button"></input>
+  </div>
+  </br>
   <h1>Dim the LED with the slider below</h1>
-  <input id="control" type="range" min="0" max="200" step="1" oninput="getValue(this.value)" onchange="getValue(this.value)"></input>
+  <div class="wrapper">
+    <p id="msg"></p>
+    <input class="placement" id="control" type="range" min="0" max="200" step="1" oninput="getValue(this.value)" onchange="getValue(this.value)"></input>
+  </div>
 
   <script src="/socket.io/socket.io.js"></script>
-  <script>
-    $(document).ready(function() {
-      // Get the "brightness" value from the slider to the backend
-      var io = io();
-
-      function getValue(val) {
-        io.emit('brightness', {
-          value: val
-        });
-      };
-    });
-  </script>
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/main.js"></script>
 </body>
 
 </html>

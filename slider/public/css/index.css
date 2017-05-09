@@ -1,3 +1,19 @@
-h1{
+h1 {
   text-align: center;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.placement {
+  position: absolute;
+}
+
+#power {
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  font-size: 25px;
+  background: red;
 }
