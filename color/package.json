@@ -1,0 +1,23 @@
+{
+  "name": "color",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denvereezy/eXrobots.git"
+  },
+  "dependencies":{
+    "johnny-five": "latest",
+    "socket.io":"latest"
+  },
+  "author": "denver daniels",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/denvereezy/eXrobots/issues"
+  },
+  "homepage": "https://github.com/denvereezy/eXrobots#readme"
+}
