@@ -12,7 +12,6 @@
   },
   "dependencies":{
     "johnny-five": "latest",
-    "keypress":"latest",
     "socket.io":"latest"
   },
   "author": "various authors",
