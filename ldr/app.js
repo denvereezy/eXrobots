@@ -11,10 +11,6 @@ board.on("ready", function() {
     freq: 250
   });
 
-  board.repl.inject({
-    pot: photoresistor
-  });
-
   photoresistor.on("data", function() {
     console.log(this.value);
     led.brightness(this.value);
