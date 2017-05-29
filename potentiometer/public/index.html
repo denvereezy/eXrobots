@@ -2,34 +2,34 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style media="screen">
-        html {
-            background: black;
-        }
-    </style>
-    <title></title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style media="screen">
+    html {
+      background: black;
+    }
+  </style>
+  <title></title>
 
 </head>
 
 <body>
 
-      <img class="data" src="/img/codeX-logo-alt.svg" alt="" />
-    <script src="/js/jquery.min.js"></script>
-    <script src="/socket.io/socket.io.js"></script>
-    <script type="text/javascript">
-        var socket = io();
-        $(document).ready(function() {
-            socket.on('value', function(data) {
-                $(".data").css('width', data.data + 'px');
-            });
-            socket.on('value1', function(data) {
-                $(".data").css('height', data.data + 'px');
-            });
-        });
-    </script>
+  <img class="data" src="/img/codeX-logo-alt.svg" alt="" />
+  <script src="/js/jquery.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script type="text/javascript">
+    var socket = io();
+    $(document).ready(function() {
+      socket.on('value1', function(data) {
+        $(".data").css('width', data.data + 'px');
+      });
+      socket.on('value2', function(data) {
+        $(".data").css('height', data.data + 'px');
+      });
+    });
+  </script>
 </body>
 
 </html>

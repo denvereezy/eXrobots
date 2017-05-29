@@ -3,7 +3,7 @@ var five = require('johnny-five'),
     express = require('express'),
     app = express(),
     server = http.createServer(app),
-    io = require('socket.io')(server),,
+    io = require('socket.io')(server),
     board = new five.Board();
 
 app.use(express.static('public'));
@@ -24,7 +24,7 @@ board.on('ready', function(){
   potentiometer.on('data', function(){
     var value_1 = this.value;
     console.log(value_1);
-    io.emit('value', {
+    io.emit('value1', {
         data: value_1
     });
   });
@@ -32,7 +32,7 @@ board.on('ready', function(){
   potentiometer2.on('data', function(){
     var value_2 = this.value;
     console.log(value_2);
-    io.emit('value1', {
+    io.emit('value2', {
         data: value_2
     });
   });
